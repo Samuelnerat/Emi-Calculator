@@ -45,5 +45,15 @@ class EmiController extends GetxController {
 
     result.value =
         "Monthly EMI: ₹${finalEmi.toStringAsFixed(2)}\nTotal Fees: ₹${totalFees.toStringAsFixed(2)}";
+
+          Get.snackbar(
+    "EMI Calculation Result",
+    "Monthly EMI: ₹${finalEmi.toStringAsFixed(2)}\nTotal Fees: ₹${totalFees.toStringAsFixed(2)}",
+    snackPosition: SnackPosition.BOTTOM, // or TOP
+    backgroundColor: const Color(0xFF0A6CF1).withOpacity(0.8),
+    colorText: const Color(0xFFFFFFFF),
+    margin: const EdgeInsets.all(12),
+    borderRadius: 10,
+  );
   }
 }

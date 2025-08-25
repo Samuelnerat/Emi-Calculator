@@ -139,13 +139,13 @@ class EmiCalculatorScreen extends GetView<EmiController> {
                   ),
 
                   const SizedBox(height: 20),
-                  Obx(() => Text(
-                        controller.result.value,
-                        style: const TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      )),
+                  // Obx(() => Text(
+                  //       controller.result.value,
+                  //       style: const TextStyle(
+                  //         fontSize: 14,
+                  //         fontWeight: FontWeight.w500,
+                  //       ),
+                  //     )),
                 ],
               ),
             ),
